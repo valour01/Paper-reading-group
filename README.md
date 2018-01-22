@@ -120,3 +120,12 @@ Abstract: The increasing growth of cybercrimes targeting mobile devices urges an
 
 [article](https://github.com/valour01/Paper-reading-group/blob/master/2018_January/01_15_ACSAC_2018/paper.pdf)
 [slides](https://github.com/valour01/Paper-reading-group/blob/master/2018_January/01_15_ACSAC_2018/slides.pdf)
+
+### 2018-01-22
+#### Title:DIDACache: A Deep Integration of Device and Application for Flash Based Key-Value Caching
+##### Authors: Zhaoyan Shen, Feng Chen, Yichen Jia, Zili Shao
+Abstract:In recent years, flash-based key-value cache systems have raised high interest in industry, such as Facebook’s McDipper and Twitter’s Fatcache. These cache systems typically use commercial SSDs to store and manage key-value cache data in flash. Such a practice, though simple, is inefficient due to the huge semantic gap between the key-value cache manager and the underlying flash devices. In this paper, we advocate to reconsider the cache system design and directly open device-level details of the underlying flash storage for key-value caching. This co-design approach bridges the semantic gap and well connects the two layers together, which allows us to leverage both the domain knowledge of key-value caches and the unique device properties. In this way, we can maximize the efficiency of key-value caching on flash devices while minimizing its weakness. We implemented a prototype, called DIDACache, based on the Open-Channel SSD platform. Our experiments on real hardware show that we can significantly increase the throughput by 35.5%, reduce the latency by 23.6%, and remove unnecessary erase operations by 28%. 
+
+
+[article](https://github.com/valour01/Paper-reading-group/blob/master/2018_January/01_22_FAST_2018/paper.pdf)
+[slides](https://github.com/valour01/Paper-reading-group/blob/master/2018_January/01_22_FAST_2018/slides.pdf)
