@@ -129,3 +129,16 @@ Abstract:In recent years, flash-based key-value cache systems have raised high i
 
 [article](https://github.com/valour01/Paper-reading-group/blob/master/2018_January/01_22_FAST_2018/paper.pdf)
 [slides](https://github.com/valour01/Paper-reading-group/blob/master/2018_January/01_22_FAST_2018/slides.pdf)
+
+
+### 2018-02-02
+#### Title: Generating Tests by Example
+##### Authors: Hila Peleg, Dan Rasin, Eran Yahav
+Abstract:Property-based testing is a technique combining parametric tests with value generators, to create an efficient and maintainable way to test general specifications. To test the program, property-based testing randomly generates a large number of inputs defined by the generator to check whether the test-assertions hold.
+We present a novel framework that synthesizes property-based tests from existing unit tests. Projects often have a suite of unit tests that have been collected over time, some of them checking specific and subtle cases. Our approach leverages existing unit tests to learn property-based tests that can be used to increase value coverage by orders of magnitude. Further, we show that our approach: (i) preserves the subtleties of the original test suite; and (ii) produces properties that cover a greater range of inputs than those in the example set.
+The main idea is to use abstractions to over-approximate the concrete values of tests with similar structure. These abstractions are then used to produce appropriate value generators that can drive the synthesized property-based test.
+We present JARVIS, a tool that synthesizes property-based tests from unit tests, while preserving the subtleties of the original unit tests. We evaluate JARVIS on tests from Apache projects, and show that it preserves these interesting tests while increasing value coverage by orders of magnitude.
+
+
+[article](https://github.com/valour01/Paper-reading-group/blob/master/2018_February/02_02_VMCAI_2018/paper.pdf)
+[slides](https://github.com/valour01/Paper-reading-group/blob/master/2018_February/02_02_VMCAI_2018/slides.pdf)
