@@ -142,3 +142,13 @@ We present JARVIS, a tool that synthesizes property-based tests from unit tests,
 
 [article](https://github.com/valour01/Paper-reading-group/blob/master/2018_February/02_02_VMCAI_2018/paper.pdf)
 [slides](https://github.com/valour01/Paper-reading-group/blob/master/2018_February/02_02_VMCAI_2018/slides.pdf)
+
+
+### 2018-02-06
+#### Title: Precise and Scalable Detection of Double-Fetch Bugs in OS Kernels
+##### Authors: Meng Xu, Chenxiong Qian, Kangjie Lu, Michael Backes, Taesoo Kim
+Abstract: During system call execution, it is common for operating system kernels to read userspace memory multiple times (multi-reads). A critical bug may exist if the fetched userspace memory is subject to change across these reads, i.e., a race condition, which is known as a double-fetch bug. Prior works have attempted to detect these bugs both statically and dynamically. However, due to their improper assumptions and imprecise definitions regarding double-fetch bugs, their multi-read detection is inherently limited and suffers from significant false positives and false negatives. For example, their approach is unable to support device emulation, inter-procedural analysis, loop handling, etc. More importantly, they completely leave the task of finding real double-fetch bugs from the haystack of multi-reads to manual verification, which is expensive if possible at all. In this paper, we first present a formal and precise definition of double-fetch bugs and then implement a static analysis system - Deadline - to automatically detect double-fetch bugs in OS kernels. Deadline uses static program analysis techniques to systematically find multi-reads throughout the kernel and employs specialized symbolic checking to vet each multi-read for double-fetch bugs. We apply Deadline to Linux and FreeBSD kernels and find 23 new bugs in Linux and one new bug in FreeBSD. We further propose four generic strategies to patch and prevent double-fetch bugs based on our study and the discussion with kernel maintainers.
+
+
+[article](https://github.com/valour01/Paper-reading-group/blob/master/2018_February/02_06_SP_2018/paper.pdf)
+[slides](https://github.com/valour01/Paper-reading-group/blob/master/2018_February/02_06_SP_2018/slides.pdf)
