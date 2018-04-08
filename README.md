@@ -160,8 +160,8 @@ Abstract: During system call execution, it is common for operating system kernel
 Abstract: Trigger-Action platforms are web-based systems that enable users to create automation rules by stitching together online services representing digital and physical resources using OAuth tokens. Unfortunately, these platforms introduce a longrange large-scale security risk: If they are compromised, an attacker can misuse the OAuth tokens belonging to a large number of users to arbitrarily manipulate their devices and data. We introduce Decentralized Action Integrity, a security principle that prevents an untrusted trigger-action platform from misusing compromised OAuth tokens in ways that are inconsistent with any given user’s set of trigger-action rules. We present the design and evaluation of Decentralized Trigger-Action Platform (DTAP), a trigger-action platform that implements this principle by overcoming practical challenges. DTAP splits currently monolithic platform designs into an untrusted cloud service, and a set of user clients (each user only trusts their client). Our design introduces the concept of Transfer Tokens (XTokens) to practically use finegrained rule-specific tokens without increasing the number of OAuth permission prompts compared to current platforms. Our evaluation indicates that DTAP poses negligible overhead: it adds less than 15ms of latency to rule execution time, and reduces throughput by 2.5%.
 
 
-[article](https://github.com/valour01/Paper-reading-group/blob/master/2018_February/03_18_NDSS_2018/paper.pdf)
-[slides](https://github.com/valour01/Paper-reading-group/blob/master/2018_February/03_18_NDSS_2018/slides.pdf)
+[article](https://github.com/valour01/Paper-reading-group/blob/master/2018_March/03_18_NDSS_2018/paper.pdf)
+[slides](https://github.com/valour01/Paper-reading-group/blob/master/2018_March/03_18_NDSS_2018/slides.pdf)
 
 
 
@@ -171,8 +171,8 @@ Abstract: Trigger-Action platforms are web-based systems that enable users to cr
 Abstract: Operating system kernels are appealing attack targets: compromising the kernel usually allows attackers to bypass all deployed security mechanisms and take control over the entire system. Commodity kernels, like Linux, are written in low-level programming languages that offer only limited type and memory-safety guarantees, enabling adversaries to launch sophisticated run-time attacks against the kernel by exploiting memory-corruption vulnerabilities. Many defenses have been proposed to protect operating systems at run time, such as control-flow integrity (CFI). However, the goal of these run-time monitors is to prevent exploitation as a symptom of memory corruption, rather than eliminating the underlying root cause, i.e., bugs in the kernel code. While finding bugs can be automated, e.g., using static analysis, all existing approaches are limited to local, intra-procedural checks, and face severe scalability challenges due to the large kernel code base. Consequently, there currently exist no tools for conducting global static analysis of operating system kernels. In this paper, we present K-Miner, a new framework to efficiently analyze large, commodity operating system kernels like Linux. Our novel approach exploits the highly standardized interface structure of the kernel code to enable scalable pointer analysis and conduct global, context-sensitive analysis. Through our inter-procedural analysis we show that K-Miner systematically and reliably uncovers several different classes of memory-corruption vulnerabilities, such as dangling pointers, user-after-free, double-free, and double-lock vulnerabilities. We thoroughly evaluate our extensible analysis framework, which leverages the popular and widely used LLVM compiler suite, for the current Linux kernel and demonstrate its effectiveness by reporting several memory-corruption vulnerabilities.
 
 
-[article](https://github.com/valour01/Paper-reading-group/blob/master/2018_February/03_20_NDSS_2018/paper.pdf)
-[slides](https://github.com/valour01/Paper-reading-group/blob/master/2018_February/03_20_NDSS_2018/slides.pdf)
+[article](https://github.com/valour01/Paper-reading-group/blob/master/2018_March/03_20_NDSS_2018/paper.pdf)
+[slides](https://github.com/valour01/Paper-reading-group/blob/master/2018_March/03_20_NDSS_2018/slides.pdf)
 
 
 
@@ -183,9 +183,17 @@ Abstract: Static binary rewriting is a core technology for many systems and secu
 
 
 .
-[article](https://github.com/valour01/Paper-reading-group/blob/master/2018_February/03_28_NDSS_2018/paper.pdf)
-[slides](https://github.com/valour01/Paper-reading-group/blob/master/2018_February/03_28_NDSS_2018/slides.pdf)
+[article](https://github.com/valour01/Paper-reading-group/blob/master/2018_March/03_28_NDSS_2018/paper.pdf)
+[slides](https://github.com/valour01/Paper-reading-group/blob/master/2018_March/03_28_NDSS_2018/slides.pdf)
 
 
 
+### 2018-04-05
+#### Title: SchrodinText: Strong Protection of Sensitive Textual Content of Mobile Applications
+##### Authors: Ardalan Amiri Sani
+Abstract:Many mobile applications deliver and show sensitive and private textual content to users including messages, social network posts, account information, and verification codes. All such textual content must only be displayed to the user but must be strongly protected from unauthorized access in the device. Unfortunately, this is not the case in mobile devices today: malware that can compromise the operating system, e.g., gain root or kernel privileges, can easily access textual content of other applications. In this paper, we present SchrodinText, a system solution for strongly protecting the confidentiality of application's selected UI textual content from a fully compromised operating system. SchrodinText leverages a novel security monitor based on two hardware features on modern ARM processors: virtualization hardware and TrustZone. Our key contribution is a set of novel techniques that allow the operating system to perform the text rendering without needing access to the text itself, hence minimizing the Trusted Computing Base (TCB). These techniques, collectively called oblivious rendering, enable the operating system to rasterize and lay out all the characters without access to the text; the monitor only resolves the right character glyphs onto the framebuffer observed by the user and protects them from the operating system, e.g., against DMA attacks. We present our prototype using an ARM Juno development board and Android operating system. We show that SchrodinText incurs noticeable overhead but that its performance is usable
 
+
+
+[article](https://github.com/valour01/Paper-reading-group/blob/master/2018_April/04_05_Mobisys_2018/paper.pdf)
+[slides](https://github.com/valour01/Paper-reading-group/blob/master/2018_April/04_05_Mobisys_2018/slides.pdf)
